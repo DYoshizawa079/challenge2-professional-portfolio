@@ -1,0 +1,67 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+/* MAIN CONTAINER ITEMS */
+header {
+    width:800px;
+    margin:0 auto;
+    padding:20px;
+    box-sizing: border-box;
+    border:solid 1px blue;
+}
+section {
+    border:solid 1px blue;
+    width:800px;
+    margin:auto;
+    padding:20px;
+    box-sizing: border-box;
+    overflow:hidden;
+}
+footer {
+    width:800px;
+    margin: auto;
+    text-align:center;
+    padding:20px;
+    box-sizing: border-box;
+}
+
+/* HEADER ITEMS */
+nav {
+    border:solid 1px red;
+    overflow:hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav ul {
+    width:100%;
+}
+nav ul li {
+    list-style-type: none;
+}
+nav ul li a {
+    margin: 10px;
+    float:left;
+}
+
+/* PROFILE SECTION ITEMS */
+#about img {
+    width:200px;
+    height:200px;
+    float:right;
+}
+
+/* PROJECT SECTION ITEMS */
+.projects-container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.project {
+    border:solid 1px green;
+}
+.project img {
+    width:100%;
+}
+
