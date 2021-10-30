@@ -1,4 +1,4 @@
-#Challenge 2: Professional Portfolio
+# Challenge 2: Professional Portfolio
 
 This project was made with the purpose of demonstrating the following:
 - CSS flexboxes
