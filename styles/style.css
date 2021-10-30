@@ -1,11 +1,26 @@
+:root {
+    --body-content-width: 800px;
+}
 * {
     margin:0;
     padding:0;
 }
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h1 {
+    font-weight:300;
+}
+h2 {
+    font-weight:300;
+}
+h3 {
+    font-weight:300;
+}
 
 /* MAIN CONTAINER ITEMS */
 header {
-    width:800px;
+    width: var(--body-content-width);
     margin:0 auto;
     padding:20px;
     box-sizing: border-box;
@@ -13,18 +28,29 @@ header {
 }
 section {
     border:solid 1px blue;
-    width:800px;
+    width: var(--body-content-width);
     margin:auto;
     padding:20px;
     box-sizing: border-box;
     overflow:hidden;
+    display:flex;
+    flex-flow: row nowrap;
+    gap:15px;
 }
 footer {
-    width:800px;
+    width: var(--body-content-width);
     margin: auto;
     text-align:center;
     padding:20px;
     box-sizing: border-box;
+}
+
+/* MAIN SECTION CONTAINERS */
+.left-content {
+    flex-basis: 25%;
+}
+.right-content {
+    flex-basis: 75%;
 }
 
 /* HEADER ITEMS */
@@ -57,11 +83,32 @@ nav ul li a {
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
+    gap:15px;
 }
 .project {
     border:solid 1px green;
+    flex: 1;
+}
+.project:first-child {
+    flex: 1 100%;
 }
 .project img {
     width:100%;
 }
 
+/* ADJUST CSS STYLES BASED ON SCREEN SIZES */
+@media screen and (max-width: 980px) {
+    :root {
+        --body-content-width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 575px) {
+    section {
+        display:block;
+    }
+    .project {
+        flex: 1 100%;
+    }
+}
