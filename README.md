@@ -11,10 +11,6 @@ This project was made with the purpose of demonstrating the following:
 These were demonstrated by building a portfolio page that showcases a few of my projects. The page was built from scratch.
 
 The finished page can be seen at:
-<<<<<<< HEAD
-https://dyoshizawa079.github.io/challenge2-professional-portfolio/
-=======
 https://dyoshizawa079.github.io/challenge2-professional-portfolio/
 
 ![Alt text](/images/screenshot.png "Portfolio screenshot")
->>>>>>> develop
