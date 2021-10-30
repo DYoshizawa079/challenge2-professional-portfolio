@@ -71,7 +71,7 @@ footer {
     box-sizing: border-box;
 }
 
-/* MAIN SECTION CONTAINERS */
+/* CONTAINERS USED INSIDE SECTIONS */
 .left-content {
     flex-basis: 25%;
 }
@@ -91,8 +91,7 @@ header span {
 }
 nav {
     overflow:hidden;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0;
 }
 nav ul {
     flex-flow: row nowrap;
@@ -117,22 +116,22 @@ nav ul li a:hover {
 
 /* PROFILE SECTION ITEMS */
 #about img {
-    width:200px;
-    height:200px;
-    float:right;
+    width: 200px;
+    height: 200px;
+    float: right;
     padding-left: 15px;
 }
 
 /* PROJECT SECTION ITEMS */
 .projects-container {
-    display:flex;
+    display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
-    gap:15px;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 .project {
     flex: 1;
-    position:relative;
+    position: relative;
 }
 .project:first-child {
     flex: 1 100%;
@@ -151,8 +150,8 @@ nav ul li a:hover {
     color:#fff;
 }
 .project img {
-    display:block;
-    width:100%;
+    display: block;
+    width: 100%;
 }
 
 /* ADJUST CSS STYLES BASED ON SCREEN SIZES */
@@ -163,15 +162,15 @@ nav ul li a:hover {
 }
 @media screen and (max-width: 768px) {
     header {
-        height:auto;
+        height: auto;
     }
 }
 @media screen and (max-width: 575px) {
     section {
-        display:block;
+        display: block;
     }
     header {
-        display:block;
+        display: block;
     }
     nav ul {
         justify-content: flex-start;
